@@ -1,3 +1,2 @@
 # introduccion-a-react
-Curso de Introducción a React.js
-En Platzi con JuanDC
+Curso de Introducción a React.js en Platzi con JuanDC
