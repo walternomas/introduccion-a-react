@@ -1,4 +1,4 @@
-import "./App.css";
+// import "./App.css";
 import TodoCounter from "./TodoCounter";
 import TodoSearch from "./TodoSearch";
 import TodoList from "./TodoList";
@@ -9,7 +9,7 @@ const todos = [
   {
     id: 1,
     text: "First todo",
-    completed: false,
+    completed: true,
   },
   {
     id: 2,
@@ -30,11 +30,14 @@ function App() {
       <TodoSearch />
       <TodoList>
         {todos.map((todo) => (
-          <TodoItem key={todo.id} text={todo.text} completed={todo.completed} />
+          <TodoItem 
+            key={todo.id} 
+            text={todo.text} 
+            completed={todo.completed} 
+          />
         ))}
       </TodoList>
       <CreateTodoButton />
-      <button>+</button>
     </>
   );
 }

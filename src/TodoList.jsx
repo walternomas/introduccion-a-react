@@ -1,3 +1,5 @@
+import './TodoList.css';
+
 function TodoList(props) {
   return (
     <section>
@@ -5,6 +7,7 @@ function TodoList(props) {
         {props.children}
       </ul>
     </section>
-  );}
+  );
+}
 
-  export default TodoList;
+export default TodoList;
