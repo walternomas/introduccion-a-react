@@ -34,7 +34,7 @@ function AppUI() {
 
         {searchedTodos.map((todo) => (
           <TodoItem
-            key={todo.id}
+            key={todo.text}
             text={todo.text}
             completed={todo.completed}
             onComplete={() => completeTodo(todo.text)}
